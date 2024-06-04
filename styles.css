@@ -1,0 +1,268 @@
+/* Estilos de tu página */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Encabezado y pie de página */
+header, footer {
+    background-color: #363636;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Navegación */
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 15px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: #66ff00;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Contenido principal */
+.main-content {
+    padding: 20px;
+}
+
+.main-content section {
+    margin-bottom: 20px;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Logo */
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Títulos */
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Sección de historia */
+.history-section {
+    font-style: italic;
+}
+
+/* Secciones identificadas por década */
+section[id^="decada"] {
+    border: 2px solid #fff;
+}
+
+/* Enlaces */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Botón */
+.button {
+    padding: 10px 20px;
+    background-color: #00ff4c;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* Consultas de medios */
+@media screen and (max-width: 1023px) {
+    header, footer {
+        padding: 10px;
+    }
+
+    nav ul li {
+        margin-right: 10px;
+    }
+
+    .logo img {
+        max-width: 150px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .carousel img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .carousel {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .slide {
+        scroll-snap-align: start;
+    }
+
+    /* Estilos para los botones del encabezado en dispositivos móviles */
+    header nav ul li button {
+        background-color: rgb(32, 238, 32);
+        color: rgb(0, 0, 0);
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        margin: 5px; /* Espacio entre los botones */
+        flex: 1; /* Ocupa el mismo espacio en la fila */
+    }
+
+    /* Estilos para los botones del menú principal en dispositivos móviles */
+    nav ul li a {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+
+    /* Estilos para las secciones identificadas por década en dispositivos móviles */
+    section[id^="decada"] {
+        font-size: 18px;
+        padding: 10px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    nav ul li {
+        margin-right: 20px;
+    }
+
+    .logo img {
+        max-width: 200px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+}
+
+/* Estilos para hacer las imágenes responsivas */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos para hacer los videos responsivos */
+.youtube-video {
+    position: relative;
+    padding-bottom: 56.25%; /* Proporción 16:9 para los videos de YouTube */
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.youtube-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Estilos para los botones del encabezado */
+header nav ul li button {
+    background-color: rgb(32, 238, 32);
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Estilos para cambiar el color al pasar el cursor por encima */
+header nav ul li button:hover {
+    background-color: blue;
+}
+
+/* Estilos para los botones del carrusel en dispositivos móviles */
+@media screen and (max-width: 1023px) {
+    .carousel {
+        display: flex;
+        flex-direction: column; /* Cambio a dirección de columna para alinear botones */
+        align-items: center; /* Alineación horizontal */
+    }
+
+    .carousel .botones-carousel {
+        display: flex;
+        justify-content: center; /* Centrar los botones horizontalmente */
+    }
+
+    .carousel .botones-carousel button {
+        margin: 5px; /* Espacio entre los botones */
+        flex: 1; /* Ocupa el mismo espacio en la fila */
+    }
+}
+
+/* Estilos adicionales para los botones de carrusel */
+@media only screen and (max-width: 600px) {
+    /* Ajustar el tamaño de los botones en dispositivos móviles */
+    .carousel .botones-carousel button {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+}
+
+/* styles.css */
+
+#suggestionForm {
+    margin-bottom: 20px;
+  }
+  
+  #suggestionForm textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  #suggestionForm button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #suggestionForm button:hover {
+    background-color: #45a049;
+  }
+  
+  #confirmationMessage {
+    color: green;
+    font-weight: bold;
+  }
+  
